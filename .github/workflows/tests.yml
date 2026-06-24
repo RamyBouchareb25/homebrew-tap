@@ -39,8 +39,8 @@ jobs:
 
       - run: brew test-bot --only-setup
 
-      - run: brew test-bot --only-tap-syntax
-      - run: brew test-bot --only-formulae
+      - run: brew test-bot --only-tap-syntax --tap=ramybouchareb25/tap
+      - run: brew test-bot --only-formulae --tap=ramybouchareb25/tap
         if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact

@@ -1,16 +1,28 @@
 # RamyBouchareb25 Tap
 
+Homebrew tap for `orbcert`, a CLI that creates and trusts local TLS certificates
+for OrbStack Kubernetes domains like `my-app.k8s.orb.local`.
+
 ## How do I install these formulae?
 
-`brew install ramybouchareb25/tap/<formula>`
+```sh
+brew trust --formula ramybouchareb25/tap/orbcert
+brew install ramybouchareb25/tap/orbcert
+```
 
-Or `brew tap ramybouchareb25/tap` and then `brew install <formula>`.
+Or tap first and then install:
+
+```sh
+brew tap ramybouchareb25/tap
+brew trust --formula ramybouchareb25/tap/orbcert
+brew install orbcert
+```
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "ramybouchareb25/tap"
-brew "<formula>"
+brew "orbcert"
 ```
 
 ## Tap Trust
@@ -33,7 +45,7 @@ brew trust ramybouchareb25/tap
 Then install:
 
 ```sh
-brew install ramybouchareb25/tap/<formula>
+brew install ramybouchareb25/tap/orbcert
 ```
 
 ## Documentation
