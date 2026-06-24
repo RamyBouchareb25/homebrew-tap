@@ -51,3 +51,7 @@ brew install ramybouchareb25/tap/orbcert
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
+## License
+
+MIT
